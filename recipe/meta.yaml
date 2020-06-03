@@ -1,5 +1,5 @@
 {% set name = "benten" %}
-{% set version = "2020.03.10" %}
+{% set version = "2020.06.03.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rabix/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 58aa06614d6d6e8bcc7dc6d1918282b6894e80b7d481adfa946177dc994719f9
+  sha256: 5cd981c13c991e704af7304899d32406a38c09d69f7f624ce3bebd5541025a07
 
 build:
   number: 0
