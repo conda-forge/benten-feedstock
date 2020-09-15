@@ -1,6 +1,6 @@
 {% set name = "benten" %}
-{% set version = "2020.06.03.1" %}
-{% set sha256 = "5cd981c13c991e704af7304899d32406a38c09d69f7f624ce3bebd5541025a07" %}
+{% set version = "2020.09.15" %}
+{% set sha256 = "26e1285f024b8fb1689938f6fb2dbc56e2628643705cf0e3b3a443beebdf851b" %}
 
 package:
   name: {{ name|lower }}
