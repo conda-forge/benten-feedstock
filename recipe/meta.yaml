@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -24,8 +24,8 @@ requirements:
   run:
     - python >=3.7
     - cwlformat
-    - ruamel.yaml
-    - dukpy
+    - ruamel.yaml >=0.15.77
+    - dukpy >=0.2.2
 
 test:
   imports:
