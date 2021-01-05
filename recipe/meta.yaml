@@ -1,6 +1,6 @@
 {% set name = "benten" %}
-{% set version = "2020.09.28" %}
-{% set sha256 = "9a9e1ee865961e5635f674a4abf888ac822c3b457cfd41235bc4eeac50fa64ee" %}
+{% set version = "2021.1.5" %}
+{% set sha256 = "31b1c633cdc1270814e134cd1e34e4320ebabe918edb231e916712ec345bc34e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
