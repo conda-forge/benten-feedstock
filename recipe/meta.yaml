@@ -1,6 +1,6 @@
 {% set name = "benten" %}
-{% set version = "2020.09.28" %}
-{% set sha256 = "9a9e1ee865961e5635f674a4abf888ac822c3b457cfd41235bc4eeac50fa64ee" %}
+{% set version = "2021.1.25" %}
+{% set sha256 = "1ed60d4fa0a71706a83cf4d74a36ef9c27c1549a8aeef2cdc0309243b5b4003e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -23,8 +23,8 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - cwlformat
-    - ruamel.yaml >=0.15.77
+    - cwlformat >=2021.1.5
+    - ruamel.yaml ==0.16.12
     - dukpy >=0.2.2
 
 test:

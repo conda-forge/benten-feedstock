@@ -5,9 +5,13 @@ Home: https://github.com/rabix/benten
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/benten-feedstock/blob/master/LICENSE.txt)
 
 Summary: A language server for Common Workflow Language documents.
+
+Development: https://github.com/rabix/benten
+
+Documentation: https://github.com/rabix/benten
 
 benten implements the language server protocol to allow editors like VSCode to provide
 syntax highlighting, autocomplete and other features for editing CWL (Common Workflow Language)
