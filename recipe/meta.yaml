@@ -1,6 +1,6 @@
 {% set name = "benten" %}
-{% set version = "2020.06.03.1" %}
-{% set sha256 = "5cd981c13c991e704af7304899d32406a38c09d69f7f624ce3bebd5541025a07" %}
+{% set version = "2021.1.25" %}
+{% set sha256 = "1ed60d4fa0a71706a83cf4d74a36ef9c27c1549a8aeef2cdc0309243b5b4003e" %}
 
 package:
   name: {{ name|lower }}
@@ -23,9 +23,9 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - cwlformat
-    - ruamel.yaml
-    - dukpy
+    - cwlformat >=2021.1.5
+    - ruamel.yaml ==0.16.12
+    - dukpy >=0.2.2
 
 test:
   imports:
