@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -19,15 +19,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - cwlformat >=2021.1.5
     - ruamel.yaml ==0.16.12
     - dukpy >=0.2.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - benten
   commands:
